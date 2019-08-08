@@ -11,4 +11,7 @@ public interface VideoMapper {
 
     @Select("select * from video;")
     List<Video> findAll();
+
+    @Select("SELECT * FROM video WHERE id = #{id}")
+    Video findById(int id);
 }
