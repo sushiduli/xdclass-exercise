@@ -3,6 +3,11 @@ package com.kg.bootdemo.domain;
 
 import java.io.Serializable;
 
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
+@ToString
+@EqualsAndHashCode
 public class Video implements Serializable {
 
   private Long id;
